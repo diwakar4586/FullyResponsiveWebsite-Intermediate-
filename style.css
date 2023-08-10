@@ -1,0 +1,228 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: white; */
+    background-color: rgb(237, 228, 228);
+}
+
+/*Navbar*/
+.navbar{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 90px;
+}
+.logo{
+    background-image: url("logo.png");
+    height: 80px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    /* filter: invert(100%); */
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+.navbar li{
+    list-style: none;
+    margin: 20px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar a:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 10px;
+}
+
+/*Home Section*/
+.home::before{
+    content: "";
+    background:url("pexels-life-of-pix-101533.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+.home{
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 60vw;
+    margin: 0px auto;
+    height: 300px;
+    text-shadow: 2px 2px black;
+}
+.home h1{
+    margin-top: 0px;
+    font-size: 3rem;
+}
+.btn{
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: black;
+    color: yellow;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services{
+    text-align: center;
+}
+.services h1{
+    margin: 50px;
+    font-size: 3rem;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly
+}
+.items{
+    height: 400px;
+    width: 30vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bg{
+    height: 70%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#box1-bg{
+    background:url("pexels-ash-376464.jpg") center center/cover;
+}
+
+#box2-bg{
+    background:url("pexels-chan-walrus-958545.jpg") center center/cover;
+}
+#box3-bg{
+    background:url("pexels-khaled-hossain-3028127.jpg") center center/cover;
+}
+
+/* Clients Section */
+.clients{
+    margin:50px 0px;
+}
+section h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.client-container{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.client-box{
+    height: 125px;
+    width: 150px;
+    /* border: 2px solid red; */
+}
+#cbox1{
+    background: url("Haldiram\'s_Logo_SVG.svg") no-repeat center center/cover;
+}
+#cbox2{
+    background: url("McDonald\'s_logo.svg.png") no-repeat center center/cover;
+}
+#cbox3{
+    background: url("kisspng-pizza-hut-logo-symbol-franchising-eat-ocean-plaza-5b69dcc190e953.6915758015336644495936.png") no-repeat center center/cover;
+}
+#cbox4{
+    background: url("unnamed.png") no-repeat center center/cover;
+}
+#cbox5{
+    display: flex;
+    font-size: 3rem;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cbox5 p{
+    margin: 30px;
+}
+
+/* Contact Us Section */
+.Contact{
+    margin: 0;
+    /* height: 700px; */
+    width: 100vw;
+    background: url("pexels-jane-doan-1099680.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+    position: relative;
+}
+.outer{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+.contact_container h1{
+    color: white;
+}
+.contact_container{
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form_items{
+    color: white;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.submit{
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+}
+.submit:hover{
+    color:rgb(255, 255, 0);
+    background-color: black;
+}
+
+/* footer */
+.footer{
+    margin: 0;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer h2{
+    margin-top: 0;
+}
+
